@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const _ = require('lodash');
 const date = require(__dirname + '/date.js'); //local module
-const mpw = require(__dirname + '/config.js'); //local module
 
 // App instance
 const port = 3000 || process.env.PORT;
@@ -19,7 +18,7 @@ app.use(express.static('public'));
 
 
 // Connect to MongoDB server
-mongoose.connect(mpw.mongoCreds, {
+mongoose.connect(process.env.mongoDB_KEY, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
