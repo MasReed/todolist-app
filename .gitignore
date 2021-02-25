@@ -1,9 +1,6 @@
-*.pdf
 
-CSS Debugging Problems/
+/node_modules/
 
-node_modules/
+npm-debug.log
 
-colors.txt
-
-config.js
+.DS_Store

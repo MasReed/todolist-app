@@ -6,7 +6,11 @@ const _ = require('lodash');
 const date = require(__dirname + '/date.js'); //local module
 
 // App instance
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT;
+if (port == null || port == ""){
+    port = 3000;
+}
+
 const app = express();
 
 // Utilize EJS, body-parser, express
