@@ -1,12 +1,9 @@
-# A 'ToDo List' Web Application
 
-A simple web application for creating and completing items on a todo list.
+## A 'ToDo List' Web Application hosted on heroku:
 
-This app is built with:
+### https://intense-temple-45937.herokuapp.com/
 
--node.js
--express.js
--MongoDB
--MongoDB Atlas
--mongoose
--heroku
+### This project uses:
+    *MongoDB/Mongoose
+    *Node.js/Express/EJS
+    *Bootstrap4
